@@ -45,6 +45,8 @@ function vacation(group, type, day) {
     }
     if (typeOfGroup === 'Students' && groupOfPeople >=30) {
         totalSum = totalSum - (0.15 * totalSum);
+        //totalSum = totalSum * 0.85
+        //totalSum *= 0.85 -> the shorter variant
     }
     else if (typeOfGroup === 'Business' && groupOfPeople >=100){
         totalSum = totalSum - ((totalSum/groupOfPeople)*10)
